@@ -7,11 +7,11 @@ local DiscordWebhookURL =
     function sendToDiscord(title, message, color)
         local embed = {
             {
-                ["title"] = "📜 " .. title, -- Itt adtam hozzá az emojit a címhez
-                ["description"] = message .. "\n\n👤 Új karakter regisztrálva: " .. message, -- Itt adtam hozzá az emojit és magyarra fordítottam a szöveget
+                ["title"] = "📜 " .. title,
+                ["description"] = message .. "\n\n👤 Új karakter regisztrálva: " .. message, 
                 ["color"] = color,
                 ["footer"] = {
-                    ["text"] = "⚙️ Karakter Regisztrációs Napló" -- Itt is egy emojit raktam a szöveghez
+                    ["text"] = "⚙️ Karakter Regisztrációs Napló"
                 }
             }
         }
